@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>Contoh navBar</title>
+    </head>
+    <body>
+        <div>
+            <table border="1">
+                <th><a href="index.html">Home</a></th>
+                <th><a href="gallary.html">Gallery</a></th>
+                <th><a href="about.html">About Me</a></th>
+                <th><a href="contact.html">Contact</a></th>
+            </table>
+        </div>
+    </body>
+    <h1>Contact</h1>
+        <head>
+            <title>Tugas Form 1</title>
+        </head>
+        <body>
+            <div>
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td> : </td>
+                        <td><input type="text" id="Data_nama" placeholder="Masukkan Nama"></td>
+                    </tr>
+                    <tr>
+                        <td>Kelas</td>
+                        <td> : </td>
+                        <td><input type="text" id="Data_kelas" placeholder="Masukkan Kelas"></td>
+                    </tr>
+                    <tr>
+                        <td>Umur</td>
+                        <td> : </td>
+                        <td><input type="number" id="Data_umur" placeholder="Masukkan Umur"></td>
+                    </tr>
+                    <tr>
+                        <td>Gmail</td>
+                        <td>:</td>
+                        <td><input name="Gmail" id="Gmail" ></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>Deskripsi</td>
+                        <td>:</td>
+                        <td><textarea name="Gmail" id="Gmail" cols="30" ></textarea></td>
+                </table>
+                <td><button onclick="TampilData()">Kirim</button></td>
+            </div>
+            <div id="content">
+                <div id="Hasil_nama"></div>
+                <div id="Hasil_kelas"></div>
+                <div id="Hasil_umur"></div>
+                <div id="Gmail"></div>
+                <div id="Deskripsi"></div>
+            </div>
+
+
+            <script type="text/javascript">
+                function TampilData(){
+                var Nama = document.getElementById('Data_nama').value;
+                var Kelas = document.getElementById('Data_kelas').value;
+                var Umur = document.getElementById('Data_umur').value;
+                var Gmail = document.getElementById('Gmail').value;
+                var Deskripsi = document.getElementById('Deskripsi').value;
+                console.log(Nama);
+                console.log(Kelas);
+                console.log(Umur);
+                console.log(Gmail);
+                console.log(Deskripsi);
+    
+                alert("Nama : " + Nama + "\nKelas : " + Kelas + "\nUmur : " + Umur + "\nGmail : " + Gmail + "\nDeskripsi : " + Deskripsi)
+                document.getElementById('Hasil_nama').innerHTML = "Nama : " + Nama;
+                document.getElementById('Hasil_kelas').innerHTML ="Kelas : " + Kelas;
+                document.getElementById('Hasil_umur').innerHTML = "Kelas : " + Umur;
+                document.getElementById('Gmail').innerHTML = "Gmail : " +  Gmail;
+                document.getElementById('Deskripsi').innerHTML = "Deskripsi : " +  Deskripsi;
+                }
+            </script>
+        </body>
+    </html>
